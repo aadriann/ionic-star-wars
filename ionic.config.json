@@ -2,5 +2,7 @@
   "name": "ionic-star-wars",
   "app_id": "662b46a6",
   "type": "ionic-angular",
-  "integrations": {}
+  "integrations": {
+    "cordova": {}
+  }
 }
