@@ -1,5 +1,7 @@
 import { Component } from '@angular/core'
 import { NavController } from 'ionic-angular';
+import { CHARACTERS } from '../../data/characters.data'
+import { Character } from '../../interfaces/characters.interface'
 
 
 @Component({
@@ -8,5 +10,8 @@ import { NavController } from 'ionic-angular';
 })
 
 export class MessagesComponent {
-  constructor(public navCtrl: NavController){}
+  characters: Character[];
+  constructor(public navCtrl: NavController){
+    this.characters = CHARACTERS.splice(0);
+  }
 }
