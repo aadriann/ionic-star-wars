@@ -10,8 +10,8 @@ import { Character } from '../../interfaces/characters.interface'
 export class CharacterDetailComponent {
   character:Character;
   constructor(public navParams:NavParams){
-    console.log(navParams.get('character'));
     this.character = navParams.get('character');
+    console.log(this.character);
   }
 
 }
